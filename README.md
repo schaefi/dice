@@ -169,5 +169,18 @@ $ cp -a /usr/share/doc/packages/dice/key/vagrant ~/.dice/key
 
 $ chmod 600 ~/.dice/key/vagrant
 
+$ pushd /tmp/suse-13.1-JeOS
+
+$ vagrant init kiwi-build-box
+
+$ popd
+
 $ dice build /tmp/suse-13.1-JeOS
+```
+
+you can check the progress with
+
+
+```
+$ dice log /tmp/suse-13.1-JeOS
 ```
